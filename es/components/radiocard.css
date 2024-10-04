@@ -1,0 +1,180 @@
+.show {
+    flex: 1;
+    position: relative;
+    font-weight: 500;
+}
+.show-wrapper {
+    align-self: stretch;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+}
+.radio {
+    width: 50px;
+    border-radius: 360px;
+    background-color: #17183b;
+    border: 5px solid #fff;
+    box-sizing: border-box;
+    height: 50px;
+}
+.question {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 5px 0px;
+}
+.text {
+    position: relative;
+    font-weight: 500;
+}
+.tag {
+    border-radius: 15px;
+    background-color: #f5e6e8;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 15px;
+    box-sizing: border-box;
+}
+.tag-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.labels {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.r11 {
+    flex: 1;
+    border-radius: 15px;
+    background-color: #f5e6e8;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 17px 20px;
+}
+.textbox-card {
+    width: 330px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: #192a51;
+}
+.options {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    font-size: 15px;
+    color: #1e1e1e;
+}
+.property-1show-active {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 30px;
+    background-color: #3a6ea5;
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 15px;
+}
+.radio1 {
+    width: 50px;
+    border-radius: 360px;
+    background-color: #f5e6e8;
+    border: 5px solid #fff;
+    box-sizing: border-box;
+    height: 50px;
+}
+.options1 {
+    width: 330px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    font-size: 15px;
+    color: #1e1e1e;
+}
+.property-1show-inactive {
+    position: absolute;
+    top: 347px;
+    left: 20px;
+    border-radius: 30px;
+    background-color: #3a6ea5;
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 15px;
+}
+.property-1movie-active {
+    position: absolute;
+    top: 467px;
+    left: 20px;
+    border-radius: 30px;
+    background: linear-gradient(#995d81, #995d81), rgba(153, 93, 129, 0.5);
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 15px;
+}
+.property-1movie-inactive {
+    position: absolute;
+    top: 804px;
+    left: 20px;
+    border-radius: 30px;
+    background-color: #995d81;
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 15px;
+}
+.radiocard {
+    width: 100%;
+    position: relative;
+    border-radius: 5px;
+    border: 1px dashed #9747ff;
+    box-sizing: border-box;
+    height: 1121px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 30px;
+    color: #d5c6e0;
+    font-family: Inter;
+}
+

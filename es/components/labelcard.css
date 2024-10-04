@@ -1,0 +1,291 @@
+.i-want-to {
+    flex: 1;
+    position: relative;
+    font-weight: 500;
+}
+.question {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 5px 10px;
+}
+.text {
+    position: relative;
+    font-weight: 500;
+}
+.tag {
+    border-radius: 15px;
+    background-color: #f5e6e8;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 15px;
+    box-sizing: border-box;
+}
+.row1 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.row4 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 12px;
+}
+.labels {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.r11 {
+    flex: 1;
+    border-radius: 15px;
+    background-color: #f5e6e8;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 17px 20px;
+}
+.textbox-card {
+    width: 330px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: #192a51;
+}
+.options {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    font-size: 15px;
+    color: #1e1e1e;
+}
+.property-1iwantto {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 30px;
+    background-color: #5941a9;
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 30px;
+}
+.tag15 {
+    border-radius: 15px;
+    background-color: #f5e6e8;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 22px;
+    box-sizing: border-box;
+}
+.tag19 {
+    border-radius: 15px;
+    background-color: #f5e6e8;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 22px;
+    box-sizing: border-box;
+}
+.property-1excluding {
+    position: absolute;
+    top: 462px;
+    left: 20px;
+    border-radius: 30px;
+    background-color: #ff5555;
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 30px;
+}
+.textbox-card2 {
+    width: 330px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.options2 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    font-size: 15px;
+}
+.property-12goodreferences {
+    position: absolute;
+    top: 784px;
+    left: 20px;
+    border-radius: 30px;
+    background-color: #1b998b;
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 30px;
+    color: #192a51;
+}
+.property-12badreferences {
+    position: absolute;
+    top: 1043px;
+    left: 20px;
+    border-radius: 30px;
+    background-color: #f46036;
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 30px;
+    color: #192a51;
+}
+.netflix-logo-icon-1 {
+    width: 30px;
+    position: relative;
+    height: 30px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.tag21 {
+    border-radius: 15px;
+    background-color: #f5e6e8;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    opacity: 0.3;
+}
+.amazon-prime-video-1-1-icon {
+    width: 60px;
+    position: relative;
+    height: 18.5px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.tag22 {
+    border-radius: 15px;
+    background-color: rgba(245, 230, 232, 0.3);
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    opacity: 0.3;
+}
+.apple-tv-1-icon {
+    width: 30px;
+    position: relative;
+    height: 14.2px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.disney-1-1-icon {
+    width: 50px;
+    position: relative;
+    height: 35.8px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.hbo-max-logo-1-1-icon {
+    width: 70px;
+    position: relative;
+    height: 10.8px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.hulu-1-icon {
+    width: 50px;
+    position: relative;
+    height: 16.5px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.crunchyroll-1-1-icon {
+    width: 70px;
+    position: relative;
+    height: 13px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.options4 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    font-size: 15px;
+    color: #192a51;
+}
+.property-1platforms {
+    position: absolute;
+    top: 1292px;
+    left: 20px;
+    border-radius: 30px;
+    background-color: #1e1e1e;
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 30px;
+}
+.labelcard {
+    width: 100%;
+    position: relative;
+    border-radius: 5px;
+    border: 1px dashed #9747ff;
+    box-sizing: border-box;
+    height: 1614px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 25px;
+    color: #d5c6e0;
+    font-family: Inter;
+}
+

@@ -1,0 +1,77 @@
+.add-any-other {
+    flex: 1;
+    position: relative;
+    font-weight: 500;
+}
+.add-any-other-details-you-wish-wrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+}
+.textbox {
+    align-self: stretch;
+    border-radius: 15px;
+    background-color: #fff;
+    border: 3px solid #f5e6e8;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 15px 20px;
+    min-height: 150px;
+    color: rgba(25, 42, 81, 0.8);
+}
+.property-1inactive {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5px;
+}
+.textbox1 {
+    width: 370px;
+    border-radius: 15px;
+    background-color: #fff;
+    border: 3px solid #f5e6e8;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 15px 20px;
+    min-height: 150px;
+    color: #192a51;
+}
+.property-1active {
+    position: absolute;
+    top: 213px;
+    left: 20px;
+    width: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5px;
+}
+.openbox {
+    width: 100%;
+    position: relative;
+    border-radius: 5px;
+    border: 1px dashed #9747ff;
+    box-sizing: border-box;
+    height: 406px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 15px;
+    color: rgba(23, 24, 59, 0.6);
+    font-family: Inter;
+}
+
