@@ -106,7 +106,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    padding: 15px 20px;
+    padding: 5px 20px;
     font-size: 15px;
     color: rgba(25, 42, 81, 0.7);
 }
@@ -134,8 +134,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    gap: 30px;
-    color: #000;
+    gap: 20px;
+    min-height: 734px;
+    color: #192a51;
 }
 .next1 {
     align-self: stretch;
@@ -259,19 +260,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    padding: 15px 20px;
+    padding: 5px 20px;
     font-size: 15px;
     color: rgba(25, 42, 81, 0.8);
 }
-.main {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 30px;
-    color: #192a51;
-}
+
 
 .step2 {
     width: 100%;
@@ -320,7 +313,7 @@
     outline: none; /* Remove outline on focus */
     resize: none; /* Disable manual resizing */
     width: 100%; /* Full container width */
-    height: 100%; /* Make textarea take full height */
+    height: 20px; /* Make textarea take full height */
     line-height: 1.5; /* Adjust line height */
     white-space: pre-wrap; /* Ensure text wraps */
     overflow: hidden; /* Hide scrollbars */
@@ -490,15 +483,6 @@
     gap: 30px;
 }
 
-.main {
-align-self: stretch;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: flex-start;
-gap: 30px;
-min-height: 734px;
-}
 
 .step3 {
     width: 100%;
@@ -619,7 +603,7 @@ min-height: 734px;
     justify-content: flex-start;
     font-size: 15px;
     color: #1e1e1e;
-    gap: 30px;
+    gap: 20px;
     
 }
 
@@ -634,7 +618,7 @@ min-height: 734px;
     justify-content: flex-start;
     font-size: 15px;
     color: #1e1e1e;
-    gap: 30px
+    gap: 20px
 }
     
 .options-show, .options-movie {
@@ -730,15 +714,7 @@ min-height: 734px;
     font-size: 30px;
     color: #d5c6e0;
 }
-.main {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 15px;
-    min-height: 734px;
-}
+
 
 .step4 {
     width: 100%;
@@ -855,15 +831,7 @@ min-height: 734px;
     text-align: left;
     color: #192a51;
 }
-.main {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 30px;
-    min-height: 734px;
-}
+
 .step5 {
     width: 100%;
     position: relative;
@@ -1020,7 +988,7 @@ min-height: 734px;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    gap: 30px;
+    gap: 20px;
     font-size: 15px;
     color: #192a51;
 }
@@ -1086,15 +1054,7 @@ font-size: 15px;
 color: rgba(23, 24, 59, 0.6);
 font-family: Inter;
 }
-.main {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 30px;
-    min-height: 734px;
-}
+
 .step6 {
     width: 100%;
     position: relative;
