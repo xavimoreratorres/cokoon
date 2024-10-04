@@ -1,0 +1,80 @@
+.text {
+    position: relative;
+    font-weight: 500;
+}
+.property-1inactive {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 15px;
+    background-color: #f9f8fd;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.property-1active {
+    position: absolute;
+    top: 90px;
+    left: 20px;
+    border-radius: 15px;
+    background-color: #192a51;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    box-sizing: border-box;
+    color: #f9f8fd;
+}
+.property-1inactive2 {
+    position: absolute;
+    top: 160px;
+    left: 20px;
+    border-radius: 15px;
+    background-color: #f5e6e8;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.property-1active2 {
+    position: absolute;
+    top: 230px;
+    left: 20px;
+    border-radius: 15px;
+    background-color: #192a51;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    box-sizing: border-box;
+    color: #f5e6e8;
+}
+.button1 {
+    width: 100%;
+    position: relative;
+    border-radius: 5px;
+    border: 1px dashed #9747ff;
+    box-sizing: border-box;
+    height: 300px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 15px;
+    color: #1e1e1e;
+    font-family: Inter;
+}
+
