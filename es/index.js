@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (imgElement) {
                     const altText = imgElement.getAttribute('alt').trim();
                     if (altText) {
-                        collectedData.push({ question: 'Watch in', answer: altText });
+                        collectedData.push({ question: 'Ver en', answer: altText });
                     }
                 }
             });
@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log(jsonData); // You can remove this line if not needed
            
             // **Send collected data to Azure Function**
-            const functionUrl = 'https://serverlessxaviopenai2.azurewebsites.net/api/cokoon?';
+            const functionUrl = 'https://serverlessxaviopenai2.azurewebsites.net/api/cokoones?';
 
             fetch(functionUrl, {
                 method: 'POST',
