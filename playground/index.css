@@ -1,0 +1,1236 @@
+
+        .tab-content { display: none; }
+        .active { display: block; }
+        .fast-recommendation {
+            align-self: stretch;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            flex-shrink: 0;
+      }
+      .next {
+            align-self: stretch;
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 0;
+      }
+      .i-want-to {
+            flex: 1;
+            position: relative;
+            font-weight: 500;
+      }
+      .question {
+            align-self: stretch;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding: 0px 10px;
+      }
+      .tag {
+            border-radius: 15px;
+            background-color: #f5e6e8;
+            height: 45px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 0px 6px;
+            box-sizing: border-box;
+            min-width: 50px;
+      }
+      .tag1 {
+            border-radius: 15px;
+            background-color: #f5e6e8;
+            height: 45px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 5px 6px;
+            box-sizing: border-box;
+            min-width: 55px;
+      }
+      .tag2 {
+            border-radius: 15px;
+            background-color: #f5e6e8;
+            height: 45px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 0px 6px;
+            box-sizing: border-box;
+            min-width: 55px;
+      }
+      .tag4 {
+            border-radius: 15px;
+            background-color: #1d1128;
+            height: 45px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 5px 6px;
+            box-sizing: border-box;
+            min-width: 55px;
+            color: #d5c6e0;
+      }
+      .row1 {
+            align-self: stretch;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+      }
+      .row2 {
+            width: 340px;
+            display: none;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+      }
+      .labels {
+            align-self: stretch;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 10px;
+      }
+      .options {
+            align-self: stretch;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: center;
+            font-size: 15px;
+            color: #1e1e1e;
+      }
+      .labelcard {
+            width: 370px;
+            border-radius: 30px;
+            background-color: #5941a9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 15px;
+            box-sizing: border-box;
+            gap: 10px;
+      }
+      .tag11 {
+            border-radius: 15px;
+            background-color: #1d1128;
+            height: 45px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 0px 6px;
+            box-sizing: border-box;
+            min-width: 50px;
+      }
+      .tag14 {
+            border-radius: 15px;
+            background-color: #f5e6e8;
+            height: 45px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 0px 6px;
+            box-sizing: border-box;
+            min-width: 50px;
+            color: #1e1e1e;
+      }
+      .labels1 {
+            align-self: stretch;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+      }
+      .options1 {
+            align-self: stretch;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: center;
+            font-size: 15px;
+      }
+      .labelcard1 {
+            width: 370px;
+            border-radius: 30px;
+            background-color: #ff5555;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 15px;
+            box-sizing: border-box;
+            gap: 10px;
+      }
+      .question2 {
+            align-self: stretch;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding: 5px 10px;
+      }
+      .netflix-logo-icon-1 {
+            width: 30px;
+            position: relative;
+            height: 30px;
+            overflow: hidden;
+            flex-shrink: 0;
+      }
+      .tag16 {
+            border-radius: 15px;
+            background-color: #f5e6e8;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 5px 15px;
+            box-sizing: border-box;
+      }
+      .amazon-prime-video-1-1-icon {
+            width: 60px;
+            position: relative;
+            height: 18.5px;
+            overflow: hidden;
+            flex-shrink: 0;
+      }
+      .tag17 {
+            border-radius: 15px;
+            background-color: #f5e6e8;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 5px 15px;
+            box-sizing: border-box;
+            opacity: 0.2;
+      }
+      .apple-tv-1-icon {
+            width: 30px;
+            position: relative;
+            height: 14.2px;
+            overflow: hidden;
+            flex-shrink: 0;
+      }
+      .disney-1-1-icon {
+            width: 50px;
+            position: relative;
+            height: 35.8px;
+            overflow: hidden;
+            flex-shrink: 0;
+      }
+      .hbo-max-logo-1-1-icon {
+            width: 70px;
+            position: relative;
+            height: 10.8px;
+            overflow: hidden;
+            flex-shrink: 0;
+      }
+      .hulu-1-icon {
+            width: 50px;
+            position: relative;
+            height: 16.5px;
+            overflow: hidden;
+            flex-shrink: 0;
+      }
+      .crunchyroll-1-1-icon {
+            width: 70px;
+            position: relative;
+            height: 13px;
+            overflow: hidden;
+            flex-shrink: 0;
+      }
+      .options2 {
+            align-self: stretch;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+      }
+      .labelcard2 {
+            width: 370px;
+            border-radius: 30px;
+            background-color: #1e1e1e;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 15px;
+            box-sizing: border-box;
+            gap: 10px;
+      }
+      .optional-add-any {
+            width: 350px;
+            position: relative;
+            font-weight: 500;
+            display: inline-block;
+            flex-shrink: 0;
+      }
+      .optional-add-any-other-detail-wrapper {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 0px 10px;
+      }
+      .textbox {
+            width: 370px;
+            border-radius: 15px;
+            background-color: #fff;
+            border: 3px solid #f5e6e8;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 15px 20px;
+            min-height: 50px;
+            color: rgba(25, 42, 81, 0.8);
+      }
+      .openbox {
+            width: 370px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 5px;
+            font-size: 15px;
+            color: rgba(23, 24, 59, 0.6);
+      }
+      .generate {
+            align-self: stretch;
+            position: relative;
+            color: #1e1e1e;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            flex-shrink: 0;
+      }
+      .main {
+            align-self: stretch;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 40px;
+            min-height: 600px;
+            z-index: 1;
+            text-align: left;
+            color: #d5c6e0;
+      }
+      .next-child {
+            width: 90px;
+            border-radius: 360px;
+            height: 90px;
+            object-fit: contain;
+      }
+      .next-item {
+            width: 110px;
+            border-radius: 360px;
+            height: 110px;
+            object-fit: contain;
+      }
+      .next1 {
+            width: 370px;
+            margin: 0 !important;
+            position: absolute;
+            top: 803px;
+            left: 30px;
+            background-color: #e8e2bd;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            z-index: 2;
+      }
+      .iteration {
+            width: 100%;
+            position: relative;
+            background-color: #f5e6e8;
+            height: 932px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 30px;
+            box-sizing: border-box;
+            gap: 40px;
+            text-align: center;
+            font-size: 25px;
+            color: #1e1e1e;
+            font-family: Inter;
+      }
+      
+      .next-child {
+        width: 90px;
+        border-radius: 360px;
+        height: 90px;
+        object-fit: contain;
+  }
+  .next-item {
+        width: 110px;
+        border-radius: 360px;
+        height: 110px;
+        object-fit: contain;
+  }
+  .next {
+        width: 100%;
+        position: absolute;
+        margin: 0 !important;
+        top: 803px;
+        background-color: #e8e2bd;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+  }
+  
+  .mood {
+    position: relative;
+    line-height: 50px;
+}
+.slider {
+    align-self: stretch;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.topheader {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 15px;
+}
+.how-productive-did {
+    flex: 1;
+    position: relative;
+    font-weight: 500;
+}
+.question {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 10px;
+}
+.text {
+    position: relative;
+    font-weight: 500;
+}
+.button1 {
+    width: 100px;
+    border-radius: 15px;
+    background-color: #f9f8fd;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.button1-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.options {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 15px;
+    color: #1e1e1e;
+}
+.questioncard1 {
+    width: 370px;
+    border-radius: 30px;
+    background-color: #d5c6e0;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    gap: 20px;
+}
+.textbox {
+    width: 370px;
+    border-radius: 15px;
+    border: 1.5px solid #d5c6e0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px 20px;
+    font-size: 15px;
+    color: rgba(25, 42, 81, 0.7);
+}
+.main {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    color: #000;
+}
+.next {
+    align-self: stretch;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #1e1e1e;
+}
+.step1 {
+    width: 430px;
+    background-color: #fff;
+    height: 932px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 30px;
+    box-sizing: border-box;
+    z-index: 0;
+    text-align: left;
+    color: rgba(25, 42, 81, 0.7);
+}
+.topheader-child {
+    align-self: stretch;
+    position: relative;
+    height: 50px;
+}
+.slider1 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.topheader1 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 15px;
+}
+.button19 {
+    width: 100px;
+    border-radius: 15px;
+    background-color: #f5e6e8;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.questioncard13 {
+    width: 370px;
+    border-radius: 30px;
+    background-color: #fff;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    gap: 20px;
+}
+.textbox1 {
+    width: 370px;
+    border-radius: 15px;
+    border: 3px solid #fff;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px 20px;
+    font-size: 15px;
+    color: rgba(25, 42, 81, 0.8);
+}
+.main1 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    color: #192a51;
+}
+.step2 {
+    width: 430px;
+    background-color: #f5e6e8;
+    height: 932px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 30px;
+    box-sizing: border-box;
+    gap: 25px;
+    z-index: 1;
+    text-align: left;
+    color: rgba(25, 42, 81, 0.8);
+}
+.topheader2 {
+    align-self: stretch;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.question6 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 5px 10px;
+}
+.tag {
+    border-radius: 15px;
+    background-color: #f5e6e8;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 15px;
+    box-sizing: border-box;
+}
+.row4 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 12px;
+}
+.labels {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.textbox-card {
+    width: 330px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: #192a51;
+}
+.options6 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    font-size: 15px;
+    color: #1e1e1e;
+}
+.labelcard {
+    width: 370px;
+    border-radius: 30px;
+    background-color: #5941a9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 30px;
+}
+.tag15 {
+    border-radius: 15px;
+    background-color: #f5e6e8;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 22px;
+    box-sizing: border-box;
+}
+.tag19 {
+    border-radius: 15px;
+    background-color: #f5e6e8;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 22px;
+    box-sizing: border-box;
+}
+.labelcard1 {
+    width: 370px;
+    border-radius: 30px;
+    background-color: #ff5555;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 30px;
+}
+.main2 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    min-height: 734px;
+}
+.step3 {
+    width: 430px;
+    background-color: #f5e6e8;
+    height: 932px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 30px;
+    box-sizing: border-box;
+    gap: 25px;
+    z-index: 2;
+    text-align: left;
+    color: #d5c6e0;
+}
+.topheader3 {
+    align-self: stretch;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.pick {
+    align-self: stretch;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.show-wrapper {
+    align-self: stretch;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+}
+.radio {
+    width: 50px;
+    border-radius: 360px;
+    background-color: #17183b;
+    border: 5px solid #fff;
+    box-sizing: border-box;
+    height: 50px;
+}
+.question8 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 5px 0px;
+}
+.radiocard {
+    width: 370px;
+    border-radius: 30px;
+    background-color: #3a6ea5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 15px;
+    text-align: left;
+    font-size: 30px;
+    color: #d5c6e0;
+}
+.radiocard1 {
+    width: 370px;
+    border-radius: 30px;
+    background: linear-gradient(#995d81, #995d81), rgba(153, 93, 129, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 15px;
+    text-align: left;
+    font-size: 30px;
+    color: #d5c6e0;
+}
+.next6 {
+    align-self: stretch;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.step4 {
+    width: 430px;
+    background-color: #f5e6e8;
+    height: 932px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 30px;
+    box-sizing: border-box;
+    gap: 25px;
+    z-index: 3;
+}
+.add {
+    align-self: stretch;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    flex-shrink: 0;
+}
+.textbox-card4 {
+    width: 330px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.options10 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    font-size: 15px;
+}
+.labelcard2 {
+    width: 370px;
+    border-radius: 30px;
+    background-color: #1b998b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 30px;
+    text-align: left;
+    color: #192a51;
+}
+.labelcard3 {
+    width: 370px;
+    border-radius: 30px;
+    background-color: #f46036;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 30px;
+    text-align: left;
+    color: #192a51;
+}
+.step5 {
+    width: 430px;
+    background-color: #f5e6e8;
+    height: 932px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 30px;
+    box-sizing: border-box;
+    gap: 25px;
+    z-index: 4;
+}
+.netflix-logo-icon-1 {
+    width: 30px;
+    position: relative;
+    height: 30px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.tag35 {
+    border-radius: 15px;
+    background-color: #f5e6e8;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    opacity: 0.3;
+}
+.amazon-prime-video-1-1-icon {
+    width: 60px;
+    position: relative;
+    height: 18.5px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.tag36 {
+    border-radius: 15px;
+    background-color: rgba(245, 230, 232, 0.3);
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    opacity: 0.3;
+}
+.apple-tv-1-icon {
+    width: 30px;
+    position: relative;
+    height: 14.2px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.disney-1-1-icon {
+    width: 50px;
+    position: relative;
+    height: 35.8px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.hbo-max-logo-1-1-icon {
+    width: 70px;
+    position: relative;
+    height: 10.8px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.hulu-1-icon {
+    width: 50px;
+    position: relative;
+    height: 16.5px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.crunchyroll-1-1-icon {
+    width: 70px;
+    position: relative;
+    height: 13px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.labelcard4 {
+    width: 370px;
+    border-radius: 30px;
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 30px;
+    text-align: left;
+    color: #d5c6e0;
+}
+.add-any-other-details-you-wish-wrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+}
+.textbox2 {
+    align-self: stretch;
+    border-radius: 15px;
+    background-color: #fff;
+    border: 3px solid #f5e6e8;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 15px 20px;
+    min-height: 150px;
+    color: rgba(25, 42, 81, 0.8);
+}
+.openbox {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    text-align: left;
+    font-size: 15px;
+    color: rgba(23, 24, 59, 0.6);
+}
+.generate {
+    align-self: stretch;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+.step6 {
+    width: 430px;
+    background-color: #f5e6e8;
+    height: 932px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 30px;
+    box-sizing: border-box;
+    gap: 25px;
+    z-index: 5;
+}
+.titlelabel {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.summary {
+    flex: 1;
+    border-radius: 15px;
+    background-color: #f5e6e8;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 17px 20px;
+}
+.textbox3 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.options13 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.keepandnext {
+    border-radius: 15px;
+    background-color: #192a51;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 30px;
+    box-sizing: border-box;
+}
+.deleteandnext {
+    border-radius: 15px;
+    background-color: #ff5555;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 30px;
+    box-sizing: border-box;
+    color: #192b51;
+}
+.keepandnext-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: #d5c6e0;
+}
+.content {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    font-size: 15px;
+    color: #192a51;
+}
+.resultcard {
+    width: 370px;
+    border-radius: 30px;
+    background-color: #004e98;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 30px;
+}
+.delete {
+    width: 38px;
+    border-radius: 180px;
+    background-color: #ff5555;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: #192b51;
+}
+.resultcard1 {
+    width: 370px;
+    border-radius: 30px;
+    background-color: #004e98;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.main6 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    min-height: 734px;
+    text-align: left;
+    color: #d5c6e0;
+}
+.step7 {
+    width: 430px;
+    background-color: #f5e6e8;
+    height: 932px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 30px;
+    box-sizing: border-box;
+    gap: 25px;
+    z-index: 6;
+}
+.next-child {
+    width: 90px;
+    border-radius: 360px;
+    height: 90px;
+    object-fit: contain;
+}
+.next-item {
+    width: 110px;
+    border-radius: 360px;
+    height: 110px;
+    object-fit: contain;
+}
+.next12 {
+    width: 370px;
+    margin: 0 !important;
+    position: absolute;
+    top: 803px;
+    left: 30px;
+    background-color: #e8e2bd;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    z-index: 7;
+}
+.master {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    font-size: 25px;
+    color: #1e1e1e;
+    font-family: Inter;
+}
+
+      
