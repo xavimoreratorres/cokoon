@@ -21,12 +21,7 @@
     align-items: center;
     justify-content: center;
 }
-.header-fastmode {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
+
 .blurheader-fastmode {
     width: 100%;
     position: fixed; /* Change this from absolute to fixed */
@@ -34,7 +29,7 @@
     top: 0; /* Ensure it stays at the top */
     z-index: 1000; /* Optional: Ensure it stays above other elements */
     background: linear-gradient(180deg, #fff 10%, rgba(255, 255, 255, 0.75) 32.5%, rgba(255, 255, 255, 0.63) 43.75%, rgba(255, 255, 255, 0.5) 55%, rgba(255, 255, 255, 0));
-    height: 50px;
+    height: 20px;
 }
 
 .formattagtext {
@@ -717,11 +712,8 @@ body, html {
     overflow-x: hidden; /* Disable horizontal scrolling */
     max-width: 768px; /* Set maximum width */
     margin: 0 auto; /* Center the page horizontally */
-    padding: 8px 16px; /* Adjust padding for smaller screens */
-    display: flex; /* Enable flexbox */
-    flex-direction: column; /* Arrange content in a column */
+        flex-direction: column; /* Arrange content in a column */
     justify-content: flex-end; /* Align content to the bottom (flex-end) */
     min-height: 100vh; /* Ensure the body takes up at least the full height of the viewport */
-    box-sizing: border-box; /* Include padding and border in the element's total width/height */
 }
 
