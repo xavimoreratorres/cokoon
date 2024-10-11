@@ -712,10 +712,16 @@
     box-shadow: inset 0 0 0 3px #5822b4;
 }
 
-/* Styles for mobile screens */
-@media screen and (max-width: 768px) {
-    .platformoptiontag, .platformoptiontagclicked {
-        width: 100%; /* Full width on mobile */
-        padding: 8px 16px; /* Adjust padding for smaller screens */
-    }
+
+body, html {
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    max-width: 768px; /* Set maximum width */
+    margin: 0 auto; /* Center the page horizontally */
+    padding: 8px 16px; /* Adjust padding for smaller screens */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Arrange content in a column */
+    justify-content: flex-end; /* Align content to the bottom (flex-end) */
+    min-height: 100vh; /* Ensure the body takes up at least the full height of the viewport */
+    box-sizing: border-box; /* Include padding and border in the element's total width/height */
 }
+
