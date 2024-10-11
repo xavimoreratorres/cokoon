@@ -21,6 +21,22 @@
     align-items: center;
     justify-content: center;
 }
+.header-fastmode {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.blurheader-fastmode {
+    width: 100%;
+    position: fixed; /* Change this from absolute to fixed */
+    margin: 0 !important;
+    top: 0; /* Ensure it stays at the top */
+    z-index: 1000; /* Optional: Ensure it stays above other elements */
+    background: linear-gradient(180deg, #fff 10%, rgba(255, 255, 255, 0.75) 32.5%, rgba(255, 255, 255, 0.63) 43.75%, rgba(255, 255, 255, 0.5) 55%, rgba(255, 255, 255, 0));
+    height: 50px;
+}
+
 .formattagtext {
     position: relative;
     font-weight: 500;
@@ -323,7 +339,7 @@
     flex-shrink: 0;
 }
 .platformoptiontag {
-
+    width: auto;
     border-radius: 8px;
     background-color: #fff;
     height: 45px;
@@ -680,7 +696,7 @@
 }
 /* Simulate inside stroke using box-shadow */
 .platformoptiontagclicked {
-
+    width: auto;
     position: relative;
     border-radius: 8px;
     background-color: #fff;
