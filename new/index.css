@@ -277,7 +277,7 @@
     line-height: 150%;
     resize: none; /* Prevent manual resizing */
     font-family: 'Poppins', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     overflow-y: auto; /* Let it scroll vertically once the max height is reached */
     color: transparent; /* Set text color to transparent */
     background: linear-gradient(270deg, #5822b4, #386bf6);
