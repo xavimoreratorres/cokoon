@@ -695,3 +695,11 @@
     /* Inside stroke effect */
     box-shadow: inset 0 0 0 3px #5822b4;
 }
+
+/* Styles for mobile screens */
+@media screen and (max-width: 768px) {
+    .platformoptiontag, .platformoptiontagclicked {
+        width: 100%; /* Full width on mobile */
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+    }
+}
