@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Dynamically adjust textarea height
-        this.style.height = 'auto'; // Reset the height
+        this.style.height = '20px'; // Reset the height
         this.style.height = this.scrollHeight + 'px'; // Set the height to match the content
     });
 
@@ -90,18 +90,18 @@ if (trailerLinkElement) {
 //AI Greeting
 
 // Define the outputgreeting const
-const outputgreeting = "Welcome to Fast Mode!"; // Example greeting
+//const outputgreeting = "Welcome to Fast Mode!"; // Example greeting
     
 // Find the element with class header-fastmodetext-txt
-const headerTextElement = document.querySelector('.header-fastmodetext-txt');
+//const headerTextElement = document.querySelector('.header-fastmodetext-txt');
 
 // Set the text content of the header-fastmodetext-txt element to outputgreeting
-if (headerTextElement) {
-    headerTextElement.textContent = outputgreeting;
+//if (headerTextElement) {
+    //headerTextElement.textContent = outputgreeting;
 }
 
 
 
-});
+);
 
 

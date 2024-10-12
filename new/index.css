@@ -268,7 +268,7 @@
     min-height: 16px;
     max-height: 150px; /* You can increase this if needed */
     border: none;
-    padding: 5px;
+    padding: 0px;
     line-height: 150%;
     resize: none; /* Prevent manual resizing */
     font-family: 'Poppins', sans-serif;
@@ -279,7 +279,7 @@
     -webkit-background-clip: text; /* Clip the background to the text */
     background-clip: text; /* Ensure compatibility with other browsers */
     box-sizing: border-box; /* Ensure padding is included in width/height */
-    height: auto; /* Automatically expand with content */
+    height: 20px; /* Automatically expand with content */
 }
 
 .detailboxtext:focus {
@@ -289,6 +289,7 @@
 .detailboxtext::placeholder {
     color: #989898;
     font-style: italic;
+    font-size: 14px;
 }
 .detailboxtextcontainer {
     display: flex;
@@ -335,7 +336,7 @@
 }
 .platformoptiontag {
     width: auto;
-    border-radius: 8px;
+    border-radius: 100px;
     background-color: #fff;
     height: 45px;
     flex-shrink: 0;
@@ -693,7 +694,7 @@
 .platformoptiontagclicked {
     width: auto;
     position: relative;
-    border-radius: 8px;
+    border-radius: 100px;
     background-color: #fff;
     box-sizing: border-box;
     height: 45px;
