@@ -461,6 +461,7 @@ img {
     justify-content: flex-start;
     padding: 0px 16px;
     gap: 16px;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 .platformoptions {
     align-self: stretch;
@@ -472,6 +473,7 @@ img {
     align-items: flex-start;
     justify-content: flex-start;
     padding: 12px 0px;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 .platformcontent {
     align-self: stretch;
@@ -481,6 +483,7 @@ img {
     align-items: center;
     justify-content: flex-start;
     z-index: 1;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 .platformshadowsliderleft {
     width: 17px;
@@ -784,6 +787,7 @@ body, html {
     position: relative;
     text-decoration: underline;
     font-weight: 500;
+    font: 16px;
 }
 .datacountry:focus {
     outline: none; /* Remove the default outline when focused */
