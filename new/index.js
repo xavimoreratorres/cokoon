@@ -71,6 +71,36 @@ document.querySelectorAll('.platformoptiontag').forEach(function(tag) {
 });
 
 
+//code for youtubelink
+
+// Define the outputtitle const
+const outputtitle = "the office"; // For testing purposes
+    
+// Construct the YouTube search URL
+const youtubeSearchURL = `https://www.youtube.com/results?search_query=${encodeURIComponent(outputtitle)}+trailer`;
+
+// Find the element with class trailerlink
+const trailerLinkElement = document.querySelector('.trailerlink');
+
+// Set the href attribute of the trailerlink element to the constructed URL
+if (trailerLinkElement) {
+    trailerLinkElement.setAttribute('href', youtubeSearchURL);
+}
+
+//AI Greeting
+
+// Define the outputgreeting const
+const outputgreeting = "Welcome to Fast Mode!"; // Example greeting
+    
+// Find the element with class header-fastmodetext-txt
+const headerTextElement = document.querySelector('.header-fastmodetext-txt');
+
+// Set the text content of the header-fastmodetext-txt element to outputgreeting
+if (headerTextElement) {
+    headerTextElement.textContent = outputgreeting;
+}
+
+
 
 });
 
