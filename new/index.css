@@ -42,16 +42,21 @@
 }
 .formattag {
     width: 109px;
-    box-shadow: 0px 3px 1px rgba(120, 120, 121, 0.38) inset;
+    position: relative;
     border-radius: 100px;
-    background-color: #1c1c1d;
+    background-color: #fff;
+    border: 2px solid #1c1c1d;
+    box-sizing: border-box;
     height: 50px;
-    flex-shrink: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+    text-align: center;
+    font-size: 16px;
+    color: #1c1c1d;
+    font-family: Poppins;
+    }    
 .formatoptions {
     width: 380px;
     border-radius: 12px;
