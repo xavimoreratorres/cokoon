@@ -235,7 +235,17 @@ const datacountryDiv = document.querySelector('.datacountry');
         });
         
 
+
+
+
+
+        
     });
+
+    
+
+    
+
 
     function mapJsonToDivs(jsonResponse) {
         // Loop through each key in the JSON response
@@ -245,9 +255,6 @@ const datacountryDiv = document.querySelector('.datacountry');
                 // Find the div with the class name corresponding to the key
                 const div = document.querySelector(`.${key}`);
                 
-                // Log to check if the div is being selected
-                console.log(`Mapping key: ${key}, value: ${value}, found div:`, div);
-                
                 // Only update the div if it exists and the value is not null
                 if (div && value !== null) {
                     div.textContent = value;
@@ -255,7 +262,23 @@ const datacountryDiv = document.querySelector('.datacountry');
             }
         }
     }
-    }
+    
+
+
+
+
+//AI Greeting
+
+// Define the outputgreeting const
+//const outputgreeting = "Welcome to Fast Mode!"; // Example greeting
+    
+// Find the element with class header-fastmodetext-txt
+//const headerTextElement = document.querySelector('.header-fastmodetext-txt');
+
+// Set the text content of the header-fastmodetext-txt element to outputgreeting
+//if (headerTextElement) {
+    //headerTextElement.textContent = outputgreeting;
+}
 
 
 
