@@ -52,14 +52,23 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Handle click for .formattag elements
     document.querySelectorAll('.formattag').forEach(function(tag) {
         tag.addEventListener('click', function() {
-            // Toggle between .formattag and .formattagclicked
-            tag.classList.toggle('formattagclicked');
-            // Toggle the text style
+            // Toggle the .formattagclicked class
+            if (tag.classList.contains('formattagclicked')) {
+                // If .formattagclicked is active, remove it and restore .formattag
+                tag.classList.remove('formattagclicked');
+                tag.classList.add('formattag');
+            } else {
+                // If .formattagclicked is not active, remove .formattag and add .formattagclicked
+                tag.classList.remove('formattag');
+                tag.classList.add('formattagclicked');
+            }
+            
+            // Toggle the text style for the child element
             tag.querySelector('.formattagtext').classList.toggle('formattagtextclicked');
         });
+    
     });
 
 // Handle click for .platformoptiontag elements

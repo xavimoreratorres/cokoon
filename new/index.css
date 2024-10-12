@@ -684,6 +684,8 @@
     width: 109px;
     position: relative;
     border-radius: 100px;
+    border: 2px solid linear-gradient(180deg, #386bf6, #007cf0);
+    border-color: linear-gradient(180deg, #386bf6, #007cf0);
     background: linear-gradient(180deg, #386bf6, #007cf0);
     height: 50px;
     display: flex;
