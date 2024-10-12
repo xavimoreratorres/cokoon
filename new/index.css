@@ -32,7 +32,7 @@
     height: 20px;
 }
 
-.formattagtext {
+.formattagtext ,.imready{
     position: relative;
     font-weight: 500;
 }
@@ -360,7 +360,7 @@
     justify-content: center;
     padding: 11px 24px;
     box-sizing: border-box;
-    mix-blend-mode: luminosity;
+    mix-blend-mode: normal;
 }
 
 
@@ -909,7 +909,7 @@ body, html {
     align-items: center;
     justify-content: center;
 }
-.descriptiontagtext , .rec1_tagtext, .rec1_tagtext2, .rec1_tagtext3, .rec1_tagtext, .rec1_tagtext2, .rec1_tagtext3,
+.descriptiontagtext, .trailerlink1 ,.trailerlink2,.trailerlink3, .rec1_tagtext, .rec1_tagtext2, .rec1_tagtext3, .rec1_tagtext, .rec1_tagtext2, .rec1_tagtext3,
 .rec2_tagtext, .rec2_tagtext2, .rec2_tagtext3, .rec3_tagtext, .rec3_tagtext2, .rec3_tagtext3 {
     position: relative;
     font-weight: 500;
@@ -1047,6 +1047,7 @@ body, html {
     flex-shrink: 0;
 }
 .results {
+    visibility: hidden; /* Keep the element in the DOM but make it invisible */
     width: 100%;
     position: relative;
     background-color: #f0f0f0;
@@ -1063,6 +1064,7 @@ body, html {
 }
 
 
+
 .title, .rec1_cardcontenttitletext, .rec2_cardcontenttitletext, .rec3_cardcontenttitletext {
     align-self: stretch;
     position: relative;
@@ -1070,3 +1072,267 @@ body, html {
     line-height: 116%;
     color: #1e1e1e;
 }
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.edit-your-searchtitle {
+  	width: 380px;
+  	position: relative;
+  	line-height: 114%;
+  	font-weight: 600;
+  	display: flex;
+  	align-items: flex-end;
+  	height: 46px;
+  	flex-shrink: 0;
+}
+.edit-your-searchdescription {
+  	width: 380px;
+  	position: relative;
+  	font-size: 14px;
+  	line-height: 131%;
+  	display: inline-block;
+}
+.container {
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 8px;
+}
+.aicon-30 {
+  	width: 24px;
+  	position: relative;
+  	height: 24px;
+}
+.start-a-new {
+  	position: relative;
+  	font-weight: 500;
+}
+.aicon-30-parent {
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: flex-end;
+  	gap: 4px;
+}
+.cta-new-search {
+  	width: 380px;
+  	border-radius: 7px;
+  	background: linear-gradient(270deg, #5822b4, #386bf6);
+  	height: 48px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 12px 24px;
+  	box-sizing: border-box;
+  	max-width: 380px;
+}
+.or {
+  	width: 380px;
+  	position: relative;
+  	font-size: 12px;
+  	line-height: 131%;
+  	font-weight: 500;
+  	color: #6e6e6e;
+  	display: inline-block;
+}
+.cta-edit-your-search {
+  	width: 380px;
+  	border-radius: 7px;
+  	background-color: #1c1c1d;
+  	height: 48px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 12px 24px;
+  	box-sizing: border-box;
+  	max-width: 380px;
+}
+.cta-container {
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: flex-start;
+  	gap: 14px;
+  	text-align: center;
+  	font-size: 14px;
+  	color: #fff;
+}
+.edit-or-new-search {
+  	position: relative;
+  	width: 100%;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: flex-start;
+  	padding: 40px 0px;
+  	box-sizing: border-box;
+  	gap: 32px;
+  	text-align: left;
+  	font-size: 20px;
+  	color: #1c1c1d;
+  	font-family: Poppins;
+}
+
+.feedbacktitle {
+    width: 342px;
+    position: relative;
+    line-height: 107%;
+    display: flex;
+    align-items: flex-end;
+}
+.edit-your-searchdescription-container {
+    width: 380px;
+    position: relative;
+    font-size: 14px;
+    line-height: 131%;
+    display: inline-block;
+}
+.feedbacksectionconteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+}
+.love-icon {
+    width: 134.9px;
+    position: relative;
+    height: 130px;
+}
+.loving-them {
+    align-self: stretch;
+    position: relative;
+    font-weight: 600;
+}
+.loving-it {
+    width: 134.9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+.not-quite-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 121.87px;
+    background-color: #fff;
+    width: 134.9px;
+    height: 130px;
+}
+.icbaseline-close-icon {
+    position: absolute;
+    top: 23px;
+    left: 25.88px;
+    width: 84px;
+    height: 84px;
+    overflow: hidden;
+}
+.feedbackoptions {
+    width: 380px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 70px;
+    text-align: center;
+    font-size: 14px;
+}
+.feedback-section {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px 0px 56px;
+    box-sizing: border-box;
+    gap: 32px;
+    text-align: left;
+    font-size: 30px;
+    color: #1c1c1d;
+    font-family: Poppins;
+}
+
+
+
+.dividerbottompanel {
+    width: 100%;
+    position: relative;
+    border-top: 3px solid #fff;
+    box-sizing: border-box;
+    height: 3px;
+}
+
+.snackbarfeedbackicon {
+    width: 24px;
+    position: relative;
+    height: 24px;
+}
+.snackbaricon {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.snackbardivider-icon {
+    width: 1px;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    height: 27px;
+}
+.snackbarmessagetext {
+    position: relative;
+    line-height: 17px;
+    font-weight: 600;
+    background: linear-gradient(270deg, #5822b4, #386bf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-height: 84px;
+}
+.snackbarmessagecontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 0px 0px 8px;
+}
+.tyforyourfeedbacksnackbar {
+    display: none;
+    position: relative;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 264px;
+    
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 7px 13px;
+    box-sizing: border-box;
+    gap: 5px;
+    text-align: left;
+    font-size: 12px;
+    font-family: Poppins;
+}
+

@@ -97,24 +97,20 @@ if (trailerLinkElement) {
 }
 
 
-// IP LOCATION TOPIC
+//IP LOCATION TOPIC
 const datacountryDiv = document.querySelector('.datacountry');
 
-// Replace with ipgeolocation.io API
-const apiKey = 'bef3fb676a934d11bd1f3890962ed2b3';  // Your API key from ipgeolocation.io
-
-// Fetch the geolocation data using ipgeolocation.io
-fetch(`https://api.ipgeolocation.io/ipgeo?apiKey=${apiKey}`)
+    // Fetch the geolocation data using IP-API
+    fetch('http://ip-api.com/json/')
     .then(response => response.json())
     .then(data => {
-        const country = data.country_name;  // Adjusted to the API response structure
+        const country = data.country;
         // Set the content of the div with class 'datacountry' to the country name
         datacountryDiv.textContent = country;
     })
     .catch(error => {
         console.error('Error fetching IP or country data:', error);
     });
-
 
     // Allow user to edit the content of the div when clicked
     datacountryDiv.addEventListener('click', function() {
@@ -210,200 +206,79 @@ fetch(`https://api.ipgeolocation.io/ipgeo?apiKey=${apiKey}`)
 
         // Additional preferences
         const detailBoxText = document.querySelector('.detailboxtext').value.trim();
-const placeholder = document.querySelector('.detailboxtext').getAttribute('placeholder');
+        const placeholder = document.querySelector('.detailboxtext').getAttribute('placeholder');
 
-if (detailBoxText && detailBoxText !== placeholder) {
-    collectedValues.push({ question: 'Additional user preferences', answer: detailBoxText });
-} else {
-    collectedValues.push({ question: 'Additional user preferences', answer: 'no additional preferences' });
-}
-
-// Now, send the collected data as an array
-const useroutput = JSON.stringify(collectedValues);  // Convert the array to JSON
-
-const imreadyDiv = document.querySelector('#imready');
-const spinner = imreadyDiv.querySelector('.spinner');
-const text = imreadyDiv.querySelector('.text');
-
-const functionUrl = 'https://serverlessxaviopenai2.azurewebsites.net/api/cokoonfast?';
-
-// Show the spinner and hide the text before the fetch starts
-spinner.style.display = 'inline-block';
-text.style.display = 'none';
-
-fetch(functionUrl, {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json'
-    },
-    body: useroutput  // Send the array as the request body
-})
-.then(response => response.json())  // Expect the response as JSON
-.then(data => {
-    console.log('Success:', data);
-    document.querySelector('.results').style.visibility = 'visible';  // Show the results div
-    mapJsonToDivs(data);  // Call the function to map the response to the frontend divs
-
-    // Smooth scroll to the results
-    setTimeout(() => {
-        document.querySelector('.results').scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }, 100);
-
-    // Show all result-cards that were hidden after the response is received
-    const resultCards = document.querySelectorAll('.result-card');
-    resultCards.forEach((card) => {
-        card.style.display = 'flex';  // Use display: flex to show the card and restore its layout
-    });
-
-    // Revert back to the original text after the process completes
-    spinner.style.display = 'none';
-    text.style.display = 'inline';
-})
-.catch(error => {
-    console.error('Error:', error);
-    // Revert back to the original text if there's an error
-    spinner.style.display = 'none';
-    text.style.display = 'inline';
-});
-
-// Select the header element
-const header = document.querySelector('.header-results-fastmode');
-
-// Skip functionality to hide individual result-cards using display: none
-const skipButtons = document.querySelectorAll('.cta-skip');
-const resultCards = document.querySelectorAll('.result-card');  // Moving outside for better reference
-
-skipButtons.forEach((skipButton, index) => {
-    skipButton.addEventListener('click', () => {
-        resultCards[index].style.display = 'none';  // Use display: none to hide the card and remove it from layout
-
-        // Check if any result cards are still visible
-        const visibleResultCards = Array.from(resultCards).filter(card => card.style.display !== 'none');
-        if (visibleResultCards.length === 0) {
-            header.style.display = 'none';  // Hide the header if no result cards are visible
+        if (detailBoxText && detailBoxText !== placeholder) {
+            collectedValues.push({ question: 'Additional user preferences', answer: detailBoxText });
+        } else {
+            collectedValues.push({ question: 'Additional user preferences', answer: 'no additional preferences' });
         }
+
+        // Now, send the collected data as an array
+        const useroutput = JSON.stringify(collectedValues);  // Convert the array to JSON
+
+        const functionUrl = 'https://serverlessxaviopenai2.azurewebsites.net/api/cokoonfast?';
+        fetch(functionUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: useroutput  // Send the array as the request body
+        })
+        .then(response => response.json())  // Expect the response as JSON
+        .then(data => {
+            console.log('Success:', data);
+            mapJsonToDivs(data);  // Call the function to map the response to the frontend divs
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+        
+
+
+
+
+
+        
     });
-});
 
-// Function to check visibility of result cards and show/hide header accordingly
-function checkHeaderVisibility() {
-    const visibleResultCards = Array.from(resultCards).filter(card => card.style.display !== 'none');
-    if (visibleResultCards.length > 0) {
-        header.style.display = 'block';  // Show header if any result card is visible
-    } else {
-        header.style.display = 'none';  // Hide header if no result cards are visible
-    }
-}
-
-// Call checkHeaderVisibility function whenever needed to ensure the header visibility is updated
-checkHeaderVisibility();  // This can be called after any action that affects the visibility of result cards
-
-
-// New Search functionality
-const newSearchButton = document.querySelector('.cta-new-search');
     
-newSearchButton.addEventListener('click', () => {
-    // Smooth scroll to the top of the page
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
 
-    // Delay the page reload to allow smooth scrolling to complete
-    setTimeout(() => {
-        location.reload();  // Reload the page after scrolling
-    }, 500);  // Adjust the delay as needed for the smooth scroll to finish
-});
+    
 
-
-// Edit Search functionality
-const editSearchButton = document.querySelector('.cta-edit-your-search');
-const fastmodePage = document.querySelector('.fastmodepage');  // Selecting the class
-
-editSearchButton.addEventListener('click', () => {
-    console.log('Edit your search clicked');  // Check if the event is triggered
-    if (fastmodePage) {
-        fastmodePage.scrollIntoView({ behavior: 'smooth' });  // Smooth scroll to the "fastmodepage"
-    } else {
-        console.log('Element with class .fastmodepage not found');
-    }
-});
-
-       // Select the "loving it", "not quite" buttons and the snackbar
-const lovingItButton = document.querySelector('.loving-it');
-const notQuiteButton = document.querySelector('.not-quite');
-const snackbar = document.querySelector('.tyforyourfeedbacksnackbar');  // Using class instead of ID
-
-// Function to show the snackbar
-function showSnackbar() {
-    snackbar.style.display = 'flex';  // Make the snackbar visible
-}
-
-// Add event listeners for both buttons
-lovingItButton.addEventListener('click', showSnackbar);
-notQuiteButton.addEventListener('click', showSnackbar);
-
-
-        
-        
-
-    });
 
     function mapJsonToDivs(jsonResponse) {
-    // Loop through each key in the JSON response
-    for (const key in jsonResponse) {
-        if (jsonResponse.hasOwnProperty(key)) {
-            const value = jsonResponse[key];
-            // Find the div with the class name corresponding to the key
-            const div = document.querySelector(`.${key}`);
-            
-            // Only update the div if it exists and the value is not null
-            if (div && value !== null) {
-                div.textContent = value;
-
-                // Logic for creating YouTube search links using a click event
-                if (key === "rec1_cardcontenttitletext") {
-                    const trailerLink1 = document.querySelector('.trailerlink1');
-                    if (trailerLink1) {
-                        const youtubeSearchURL = `https://www.youtube.com/results?search_query=${encodeURIComponent(value)}+trailer`;
-                        trailerLink1.addEventListener('click', function() {
-                            window.open(youtubeSearchURL, '_blank');
-                        });
-                    }
-                }
-
-                if (key === "rec2_cardcontenttitletext") {
-                    const trailerLink2 = document.querySelector('.trailerlink2');
-                    if (trailerLink2) {
-                        const youtubeSearchURL = `https://www.youtube.com/results?search_query=${encodeURIComponent(value)}+trailer`;
-                        trailerLink2.addEventListener('click', function() {
-                            window.open(youtubeSearchURL, '_blank');
-                        });
-                    }
-                }
-
-                if (key === "rec3_cardcontenttitletext") {
-                    const trailerLink3 = document.querySelector('.trailerlink3');
-                    if (trailerLink3) {
-                        const youtubeSearchURL = `https://www.youtube.com/results?search_query=${encodeURIComponent(value)}+trailer`;
-                        trailerLink3.addEventListener('click', function() {
-                            window.open(youtubeSearchURL, '_blank');
-                        });
-
-
-
-
-
-
-                    }
+        // Loop through each key in the JSON response
+        for (const key in jsonResponse) {
+            if (jsonResponse.hasOwnProperty(key)) {
+                const value = jsonResponse[key];
+                // Find the div with the class name corresponding to the key
+                const div = document.querySelector(`.${key}`);
+                
+                // Only update the div if it exists and the value is not null
+                if (div && value !== null) {
+                    div.textContent = value;
                 }
             }
         }
     }
+    
+
+
+
+
+//AI Greeting
+
+// Define the outputgreeting const
+//const outputgreeting = "Welcome to Fast Mode!"; // Example greeting
+    
+// Find the element with class header-fastmodetext-txt
+//const headerTextElement = document.querySelector('.header-fastmodetext-txt');
+
+// Set the text content of the header-fastmodetext-txt element to outputgreeting
+//if (headerTextElement) {
+    //headerTextElement.textContent = outputgreeting;
 }
-
-
-    }
 
 
 

@@ -228,7 +228,7 @@ const text = imreadyDiv.querySelector('.text');
 const functionUrl = 'https://serverlessxaviopenai2.azurewebsites.net/api/cokoonfast?';
 
 // Show the spinner and hide the text before the fetch starts
-spinner.style.display = 'inline-block';
+spinner.style.display = 'flex';
 text.style.display = 'none';
 
 fetch(functionUrl, {
@@ -257,7 +257,7 @@ fetch(functionUrl, {
 
     // Revert back to the original text after the process completes
     spinner.style.display = 'none';
-    text.style.display = 'inline';
+    text.style.display = 'flex';
 })
 .catch(error => {
     console.error('Error:', error);
