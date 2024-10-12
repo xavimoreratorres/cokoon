@@ -1390,18 +1390,6 @@ body, html {
     font-family: Poppins;
 }
 
-@media (max-width: 480px) {
-    .header-fastmodetext {
-        font-size: 24px;
-    }
-
-    .formattag, .iwanttag, .excludingtag {
-        padding: 8px 16px;
-        font-size: 14px;
-    }
-
-    /* Adjust other elements as needed */
-}
 
 body, html {
     margin: 0;
