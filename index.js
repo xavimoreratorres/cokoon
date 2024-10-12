@@ -241,7 +241,7 @@ fetch(functionUrl, {
 .then(response => response.json())  // Expect the response as JSON
 .then(data => {
     console.log('Success:', data);
-    document.querySelector('.results').style.visibility = 'visible';  // Show the results div
+    document.querySelector('.results').style.display = 'flex'; // or 'block' // Show the results div
     mapJsonToDivs(data);  // Call the function to map the response to the frontend divs
 
     // Smooth scroll to the results

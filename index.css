@@ -800,6 +800,7 @@ body, html {
 }
 .header-results-fastmodetext {
     width: 342px;
+    height: 102px;
     position: relative;
     line-height: 107%;
     display: flex;
@@ -1047,7 +1048,26 @@ body, html {
     flex-shrink: 0;
 }
 .results {
-    visibility: hidden; /* Keep the element in the DOM but make it invisible */
+    display: none; /* Hidden by default */
+    width: 100%;
+    position: relative;
+    background-color: #f0f0f0;
+    height: 100%;
+    overflow-y: auto;
+    /* Flexbox properties */
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    font-size: 30px;
+    color: #1c1c1d;
+    font-family: Poppins;
+}
+
+
+.results.visible {
+    display: flex; /* or block */
+    display: none;
     width: 100%;
     position: relative;
     background-color: #f0f0f0;
