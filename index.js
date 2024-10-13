@@ -202,7 +202,7 @@ generateButton.addEventListener('click', function() {
     });
     const country = document.querySelector('.datacountry').textContent.trim();
     if (platformValues.length > 0) {
-        promptText += `available on ${platformValues.join(', ').replace(/,([^,]*)$/, ' and$1')} in ${country}, `;
+        promptText += `make sure the recommendations are avaliable on any of these platforms ${platformValues.join(', ').replace(/,([^,]*)$/, ' and$1')} specifically avaliable in ${country}, `;
     }
 
     // Additional preferences
