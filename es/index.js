@@ -203,9 +203,9 @@ fetch(`https://api.ipgeolocation.io/ipgeo?apiKey=${apiKey}`)
 
         const country = document.querySelector('.datacountry').textContent.trim();
         if (platformValues.length === 0) {
-            collectedValues.push({ question: 'platform', answer: 'no specific platform preference' });
+            collectedValues.push({ question: 'filtering by these streaming platforms', answer: 'no specific platform preference' });
         } else {
-            collectedValues.push({ question: 'platform', answer: `${platformValues.join(', ')} connected from: ${country}` });
+            collectedValues.push({ question: 'filtering by these streaming platforms', answer: `${platformValues.join(', ')} .with available content in the country of: ${country}` });
         }
 
         // Additional preferences

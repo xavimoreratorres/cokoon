@@ -134,92 +134,91 @@ fetch(`https://api.ipgeolocation.io/ipgeo?apiKey=${apiKey}`)
         this.removeAttribute('contentEditable'); // Disable editing when focus is lost
     });
 
-///COLLECTION////
+//COLLECTION MECHANISM
 
-    //FORMAT OPTION
+const generateButton = document.querySelector('.generatebutton-fastmode');
 
-    const generateButton = document.querySelector('.generatebutton-fastmode');
-    
-    generateButton.addEventListener('click', function() {
-        const collectedValues = [];  // Array to store all collected values in key-value pairs
+generateButton.addEventListener('click', function() {
+    let promptText = "I am looking for a ";
 
-        // Format options
-        const formatTags = document.querySelectorAll('.formattagclicked');
-        formatTags.forEach(function(tag) {
-            const formattagText = tag.querySelector('.formattagtext');
-            if (formattagText) {
-                collectedValues.push({ question: 'format', answer: formattagText.textContent.trim() });
-            }
-        });
+    // Format options
+    const formatTags = document.querySelectorAll('.formattagclicked');
+    let formatValue = "";
+    formatTags.forEach(function(tag) {
+        const formattagText = tag.querySelector('.formattagtext');
+        if (formattagText) {
+            formatValue = formattagText.textContent.trim();
+        }
+    });
+    if (!formatValue) formatValue = "either a movie or TV show";  // Default if no preference
+    promptText += `${formatValue}, `;
 
-        if (collectedValues.length === 0) {
-            collectedValues.push({ question: 'format', answer: 'no preference' });
+    // Emotion/Action preference
+    const iwantTags = document.querySelectorAll('.iwanttagclicked');
+    let iwantValues = [];
+    iwantTags.forEach(function(tag) {
+        const iwantTagText = tag.querySelector('.iwanttagtext');
+        if (iwantTagText) {
+            iwantValues.push(iwantTagText.textContent.trim());
+        }
+    });
+
+    if (iwantValues.length > 0) {
+        // Check if "Learn" is selected and use appropriate phrasing
+        if (iwantValues.includes("Learn")) {
+            promptText += `something that helps me learn`;
+            iwantValues = iwantValues.filter(item => item !== "Learn");  // Remove Learn from emotions
         }
 
-        // Emotion preference
-        const iwantTags = document.querySelectorAll('.iwanttagclicked');
-        let iwantValues = [];
-
-        iwantTags.forEach(function(tag) {
-            const iwantTagText = tag.querySelector('.iwanttagtext');
-            if (iwantTagText) {
-                iwantValues.push(iwantTagText.textContent.trim());
-            }
-        });
-
-        if (iwantValues.length === 0) {
-            collectedValues.push({ question: 'user wants to', answer: 'no emotion preference' });
+        // Add other emotions with proper grammar
+        if (iwantValues.length > 0) {
+            promptText += ` and makes me feel ${iwantValues.join(', ').replace(/,([^,]*)$/, ' and$1')}, `;
         } else {
-            collectedValues.push({ question: 'user wants to', answer: iwantValues.join(', ') });
+            promptText += ", ";  // If there are no remaining emotions
         }
+    }
 
-        // Exclusion preference
-        const excludingTags = document.querySelectorAll('.excludingtagclicked');
-        let excludingValues = [];
-
-        excludingTags.forEach(function(tag) {
-            const excludingTagText = tag.querySelector('.excludingtagtext');
-            if (excludingTagText) {
-                excludingValues.push(excludingTagText.textContent.trim());
-            }
-        });
-
-        if (excludingValues.length === 0) {
-            collectedValues.push({ question: 'excluding', answer: 'no exclusion preference' });
-        } else {
-            collectedValues.push({ question: 'excluding', answer: excludingValues.join(', ') });
+    // Exclusion preference
+    const excludingTags = document.querySelectorAll('.excludingtagclicked');
+    let excludingValues = [];
+    excludingTags.forEach(function(tag) {
+        const excludingTagText = tag.querySelector('.excludingtagtext');
+        if (excludingTagText) {
+            excludingValues.push(excludingTagText.textContent.trim());
         }
+    });
+    if (excludingValues.length > 0) {
+        promptText += `but I don't want anything related to ${excludingValues.join(', ').replace(/,([^,]*)$/, ' or$1')}, `;
+    }
 
-        // Platform preference
-        const platformTags = document.querySelectorAll('.platformoptiontagclicked');
-        let platformValues = [];
-
-        platformTags.forEach(function(tag) {
-            const platformTagAlt = tag.querySelector('img').getAttribute('alt');
-            if (platformTagAlt) {
-                platformValues.push(platformTagAlt);
-            }
-        });
-
-        const country = document.querySelector('.datacountry').textContent.trim();
-        if (platformValues.length === 0) {
-            collectedValues.push({ question: 'platform', answer: 'no specific platform preference' });
-        } else {
-            collectedValues.push({ question: 'platform', answer: `${platformValues.join(', ')} connected from: ${country}` });
+    // Platform preference
+    const platformTags = document.querySelectorAll('.platformoptiontagclicked');
+    let platformValues = [];
+    platformTags.forEach(function(tag) {
+        const platformTagAlt = tag.querySelector('img').getAttribute('alt');
+        if (platformTagAlt) {
+            platformValues.push(platformTagAlt);
         }
+    });
+    const country = document.querySelector('.datacountry').textContent.trim();
+    if (platformValues.length > 0) {
+        promptText += `available on ${platformValues.join(', ').replace(/,([^,]*)$/, ' and$1')} in ${country}, `;
+    }
 
-        // Additional preferences
-        const detailBoxText = document.querySelector('.detailboxtext').value.trim();
-const placeholder = document.querySelector('.detailboxtext').getAttribute('placeholder');
+    // Additional preferences
+    const detailBoxText = document.querySelector('.detailboxtext').value.trim();
+    const placeholder = document.querySelector('.detailboxtext').getAttribute('placeholder');
+    if (detailBoxText && detailBoxText !== placeholder) {
+        promptText += `with a setting or theme like ${detailBoxText}.`;
+    } else {
+        // Properly clean ending if no additional preferences are provided
+        promptText = promptText.trim().slice(-1) === "," ? promptText.slice(0, -1) + "." : promptText; 
+    }
 
-if (detailBoxText && detailBoxText !== placeholder) {
-    collectedValues.push({ question: 'Additional user preferences', answer: detailBoxText });
-} else {
-    collectedValues.push({ question: 'Additional user preferences', answer: 'no additional preferences' });
-}
+    // Send the promptText as a well-structured sentence
+    const useroutput = JSON.stringify({ prompt: promptText });
+    console.log(useroutput);  // Log the generated prompt text for verification
 
-// Now, send the collected data as an array
-const useroutput = JSON.stringify(collectedValues);  // Convert the array to JSON
 
 const imreadyDiv = document.querySelector('#imready');
 const spinner = imreadyDiv.querySelector('.spinner');
