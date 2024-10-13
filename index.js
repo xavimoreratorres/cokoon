@@ -172,7 +172,7 @@ generateButton.addEventListener('click', function() {
 
         // Add other emotions with proper grammar
         if (iwantValues.length > 0) {
-            promptText += ` and makes me feel ${iwantValues.join(', ').replace(/,([^,]*)$/, ' and$1')}, `;
+            promptText += `that makes me feel ${iwantValues.join(', ').replace(/,([^,]*)$/, ' and$1')}, `;
         } else {
             promptText += ", ";  // If there are no remaining emotions
         }
